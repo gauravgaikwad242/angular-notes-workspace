@@ -1,0 +1,29 @@
+<div class="container" 
+style="border: solid 2px rgb(218, 123, 6);
+margin: 20px;
+padding: 5px;">
+
+<h3> Two way binding demo</h3>
+
+<label for="name">
+    company Name is
+</label>
+
+<input type="text"
+ name="companyName" 
+id="name" 
+[(ngModel)]="data">
+
+<button type="button"
+ class="btn btn-default" 
+ (click)="onClick()">
+ button
+</button>
+
+<hr>
+<label for="">ProjectName</label>
+<input type="text " (input)="projectNameFunction($event)">
+<label for="">Artifact Id</label>
+<input type="text " [(ngModel)]="projectName">
+</div>
+

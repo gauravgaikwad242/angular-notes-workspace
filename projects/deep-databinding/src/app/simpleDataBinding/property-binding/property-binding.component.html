@@ -1,0 +1,10 @@
+<div class="container" 
+style="border: solid 2px rgb(218, 123, 6);
+margin: 20px;
+padding: 5px;">
+<h3>Property Binding Demo</h3>
+<button type="button" class="btn btn-success" [disabled]="buttonStatus" (click)="onClick()">button</button>
+<button type="button" class="btn btn-success" [disabled]="!buttonStatus" (click)="onClick()">button</button>
+
+</div>
+    

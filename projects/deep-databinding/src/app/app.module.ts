@@ -12,6 +12,8 @@ import { LocalReferencesComponent } from './localReferences/local-references/loc
 import { ViewChildComponent } from './localReferences/view-child/view-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { EventBindingComponent } from './simpleDataBinding/event-binding/event-binding.component';
+import { PropertyBindingComponent } from './simpleDataBinding/property-binding/property-binding.component';
+import { TwowayBindingComponent } from './simpleDataBinding/twoway-binding/twoway-binding.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { EventBindingComponent } from './simpleDataBinding/event-binding/event-b
     LocalReferencesComponent,
     ViewChildComponent,
     NgContentComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    PropertyBindingComponent,
+    TwowayBindingComponent
   ],
   imports: [
     BrowserModule,
