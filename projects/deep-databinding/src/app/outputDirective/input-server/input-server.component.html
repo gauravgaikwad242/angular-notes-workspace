@@ -1,0 +1,9 @@
+<div class="container" style="border: solid 2px green;">
+<form (ngSubmit)="onClick()">
+    <label for="">Server Name</label>
+<input type="text" [(ngModel)]="serverName" name="serverName" id="serverName">
+<label for="">Server Content</label>
+<input type="text" [(ngModel)]="serverContent" name="serverContent" id="serverContent">
+<button type="submit" >submit</button>
+</form>
+</div>

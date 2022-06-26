@@ -1,0 +1,8 @@
+<div class="container" style="border: solid 2px rgb(5, 23, 54);">
+    <div>
+        <ng-content></ng-content>
+    </div>
+    <input type="text" name="schoolName" id="name" #schoolName>
+    <button type="submit" (click)="onClick(schoolName)">submit School Name</button>
+    
+</div>

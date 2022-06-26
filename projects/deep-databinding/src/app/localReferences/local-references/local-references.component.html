@@ -1,0 +1,13 @@
+<div class="container" style="border: solid 2px rgb(251, 10, 10);">
+<h4>This component is demo for not using ngModule or input for passing the 
+    data -----------
+    We will be using local variables which can only be used 
+    inside template 
+    to initialize it use #variabelName 
+    and to use it in typescript file use variabelName.value
+</h4>
+<input type="text" name="name" id="name" #myName>
+<button type="submit" (click)="onClick(myName)">submit my name</button>
+<h2 >{{myNameIs}}</h2>
+<app-view-child></app-view-child>
+</div>

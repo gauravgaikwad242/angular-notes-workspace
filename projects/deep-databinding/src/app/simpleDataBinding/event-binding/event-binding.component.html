@@ -1,0 +1,15 @@
+<div class="container" style="border:  solid black 2px;">
+    <h3>event Binding</h3>
+    <span class="label label-info">
+        In event binding the the data is transferred from 
+        html template to ts script
+        --
+        the data is passed from input field to a method 
+        which accepts event:Event data type
+    </span>
+    <div></div>
+    <label for="">enter city name</label>
+    <input type="text " (input)="addCityName($event)" placeholder="cityName">
+  
+    <h4>city name is --> {{cityName}}</h4>
+</div>

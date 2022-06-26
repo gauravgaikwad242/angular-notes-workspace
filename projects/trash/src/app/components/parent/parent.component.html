@@ -1,0 +1,14 @@
+<p>parent works!</p>
+<div>
+    <form (ngSubmit)="onClick()">
+        
+        <span class="label">Name</span>
+        <input type="text " name="name" [(ngModel)]="studentName">
+        
+        <button type="submit" class="btn btn-primary">button</button>
+        
+    </form>
+</div>
+<app-child [nameOfStudent]="studentName"
+            (feedbackData)="receivedData"></app-child>
+            <h1 [innerText]="receivedData"></h1>

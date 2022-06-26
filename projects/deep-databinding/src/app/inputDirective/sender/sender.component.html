@@ -1,0 +1,10 @@
+<div class="container" style="border: solid 2px rgb(215, 249, 18);">
+    <label for="name">name</label>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="enter your name">
+    <label for="age">age</label>
+    <input type="text" name="age" [(ngModel)]="age" placeholder="enter your age in integers">
+    <button type="submit" (click)="onClick()">submit</button>
+    <app-receiver [info]="info" 
+    (emitData)="data"></app-receiver>
+    <h1 [innerText]="data"></h1>
+</div>

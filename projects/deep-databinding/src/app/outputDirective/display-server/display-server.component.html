@@ -1,0 +1,21 @@
+<div class="container" style="border: solid 2px rgb(167, 175, 238);">
+    <p>display-server works!</p>
+    <app-input-server (emitData)="saveServer($event)"></app-input-server>
+    
+<div >
+    
+
+ 
+    <table class="table table-bordered table-hover">
+    <thead>
+        <td>server name</td>
+        <td>server content</td>
+    </thead>
+    <tbody *ngFor="let list of servers">
+        
+        <td [innerText]="list.sName"></td>
+        <td [innerText]="list.sContent"></td>
+    </tbody>
+</table>
+</div>
+</div>

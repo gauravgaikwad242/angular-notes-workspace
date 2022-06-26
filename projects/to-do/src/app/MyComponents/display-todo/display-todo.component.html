@@ -1,0 +1,11 @@
+<p>display-todo works!</p>
+<app-input-todo (todos)="addTodo($event)"></app-input-todo>
+<div>
+    <div>
+       <div *ngFor="let todoList of todos">
+            <p [innerText]=todoList.task></p>
+            <p [innerText]=todoList.desc></p>
+       </div>
+        
+    </div>
+</div>

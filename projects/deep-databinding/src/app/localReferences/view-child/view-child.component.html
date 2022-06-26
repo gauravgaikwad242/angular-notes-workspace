@@ -1,0 +1,11 @@
+<div class="container" style="border: solid 2px rgb(4, 0, 128);">
+<h2>@viewChild demo</h2>
+<p>we are using view child so we can assign value 
+    to the globalvariable without using function/method 
+</p>
+<input type="text" #serverName name="serverName" id="serverName" 
+placeholder="enter server Name">
+<button type="submit" (click)="onClick()">confirm</button>
+<h3>{{nameOfServer.nativeElement.value}}</h3>
+
+</div>
